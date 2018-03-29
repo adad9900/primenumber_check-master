@@ -20,14 +20,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
  
         txt.delegate = self
         txt.placeholder = "숫자입력"
-    
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
     }
 
    
@@ -56,9 +55,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
             }
         }
         if isPrime == true{
-            lbl.text = ("소수이다.")
+            lbl.text = ("Prime Number")
         }else{
-            lbl.text = ("소수가아니다.")
+            lbl.text = ("Not Prime Number")
         }
         
         
